@@ -1,15 +1,15 @@
 ---
-title: "[Project] Blogging with Gatsby, Lumen, and Netlify CMS (Part 1)"
+title: "Blogging with Gatsby, Lumen, and Netlify CMS (Part 1)"
 date: "2020-06-06T16:00:00.169Z"
 template: "post"
 draft: false
 slug: "project-gatsby-blog-part-1"
-category: "Typography"
+category: "Project"
 tags:
   - "Project"
   - "Web Development"
   - "Blogging"
-description: "Welcome to my new website, redesigned with gatsby-starter-lumen. Part one asks the question: does the world really need another developer blog?"
+description: "Welcome to my new website, redesigned with gatsby-starter-lumen. Part one asks the question: should every developer consider having their own blog?"
 socialImage: "/media/heading/writing-desk.jpg"
 ---
 
