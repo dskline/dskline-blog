@@ -1,7 +1,7 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "/photo.jpg"
+socialImage: "/photo.png"
 ---
 
 ![Old computers](/media/heading/old-computers.jpg)

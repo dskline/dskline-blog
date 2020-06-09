@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'Spencer Kline',
-    photo: '/photo.jpg',
+    photo: '/photo.png',
     bio: 'Web developer and tech enthusiast from North Carolina',
     contacts: {
       email: 'dskline1@gmail.com',

@@ -20,7 +20,7 @@ My own ESLint configuration that I maintain for personal projects (but anyone ca
 - Multiple React linting standards, including hooks
 - Accessibility (a11y) best practices
 - Browser compatibility warnings
-- Import auto-sorting (`import React` at the top, followed by third party modules, followed by `/src` modules, and
+- Import auto-sorting (import React at the top, followed by third party modules, followed by /src modules, and
 then style)
 
 [Source code](https://www.github.com/dskline/eslint-config-dskline)
