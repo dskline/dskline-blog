@@ -113,4 +113,4 @@ When the deployment is finished, a "View Preview" link should be displayed in th
 
 # Conclusion
 
-I hope this post helps more developers get started making their own blogs. If you've discovered any other cool tricks with this workflow, leave me a comment
+I hope this post helps more developers get started making their own blogs. If you've discovered any other cool tricks with this workflow, leave me a comment below.
