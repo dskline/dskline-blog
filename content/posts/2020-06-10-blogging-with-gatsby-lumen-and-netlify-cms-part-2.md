@@ -47,14 +47,14 @@ Listed here are some of the config files I recommend taking a look at and modify
 
 ```
 ./
+   /* this folder acts as your "CMS" - more on this later */
    content
-      /* this folder acts as your "CMS" - more on this later */
       pages
       posts
 
    static
       admin
-         /* update this when you're ready to turn on draft editing
+         /* update this file when you're ready to turn on draft editing */
          config.yml
 
       /* upload your own photo here */
@@ -74,7 +74,7 @@ Once you're happy with your changes, we can spin up a server with this command t
 
 The webpage can then be viewed at http://localhost:8000. If everything looks good, you can modify some of the markdown files in the `./content` folder and Gatsby will regenerate the static HTML and "hot-refresh" the page in your browser.
 
-Once you're happy with your new blog, push it to the master branch and we'll get started deploying it to the web.
+Once you're happy with your new site, push it to the master branch and we'll get started deploying it to the web.
 
 # Configuring Netlify
 Login or sign up for a free Netlify account [here](https://www.netlify.com/). Go through the steps to link your GitHub account containing your Gatsby project and deploy it. Once started, the website should be deployed in less than a minute (I know, madness). While that's happening, we need to turn on some settings anyway.
@@ -83,9 +83,9 @@ Login or sign up for a free Netlify account [here](https://www.netlify.com/). Go
 
 While on your Netlify site dashboard, go to the Settings tab in the navbar. Click on Identity from the sidebar, and click on the button to enable Identity.
 
-Next, go down a bit to `Identity > Services` and turn on `Git Gateway`. This will allow the Netlify CMS to push content changes to your git repo (which will then chain new deployments).
+Next, go down a bit to `Identity > Services` and turn on `Git Gateway`. This will allow the Netlify CMS to push content changes to your git repo (which will then chain a new deployment).
 
-Now, you should also see the Identity tab in the top navbar. Go there and invite yourself using your own email address. If your site has already deployed, you can verify your email and immediately visit your admin console at `your-netlify-domain.com/admin`. Here, you can create a password and start modifying your pages and posts!
+Once Identity is enabled, you should also see the Identity tab in the top navbar. Go there and invite yourself using your own email address. If your site has already deployed, you can verify your email and immediately visit your admin console at `your-netlify-domain.com/admin`. Here, you can create a password and start modifying your pages and posts!
 
 # Enabling Draft Posts
 
@@ -101,4 +101,16 @@ File: ./static/admin/config.yaml
 # publish_mode: editorial_workflow
 ```
 
-Uncomment the last line to set the publish_mode option and then push your configuration change to master. Then be amazed as everything just works.
+Uncomment the last line to set the publish_mode option and then push your configuration change to master. Then sit back and be amazed as everything just configures itself.
+
+## What happens now?
+
+When creating or editing posts, you should now see a Save button on the edit page. Clicking this button will create a new branch and kick off a Netlify deployment.
+
+Important: Make sure before you Save your post that the "Draft" toggle switch is turned off to view it on the preview server.
+
+When the deployment is finished, a "View Preview" link should be displayed in the top of the post edit screen. Now, you can test what your post will look like in production before publishing. You can even checkout the newly created branch to your local machine and play around with different style configurations if you like.
+
+# Conclusion
+
+I hope this post helps more developers get started making their own blogs. If you've discovered any other cool tricks with this workflow, leave me a comment
