@@ -3,7 +3,7 @@ template: post
 title: Blogging with Gatsby, Lumen, and Netlify CMS (Part 2)
 slug: project-gatsby-blog-part-2
 draft: false
-date: 2020-06-10T20:22:14.290Z
+date: 2020-06-10T21:15:56.346Z
 description: How to setup your own Gatsby blog in a few hours with gatsby-starter-lumen
 category: Project
 tags:
