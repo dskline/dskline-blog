@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://www.spencerkline.tech',
   pathPrefix: '/',
   title: 'Spencer Kline Blog',
-  subtitle: 'All posts written by Spencer Kline. Site built with gatsby-starter-lumen.',
+  subtitle: 'A blog featuring tutorials and discussions about web development, project management, tech gadgets, and more.',
   copyright: '© All rights reserved.',
   disqusShortname: 'spencerkline-blog',
   postsPerPage: 5,
