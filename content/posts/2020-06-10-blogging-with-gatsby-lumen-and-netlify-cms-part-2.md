@@ -11,7 +11,7 @@ tags:
   - Project
 ---
 * [Prerequisites](#prerequisites)
-* [Initial Configuration](#initial-configuration)
+* [Gatsby Configuration](#gatsby-configuration)
 * [Configuring Netlify](#configuring-netlify)
 * [Enabling Draft Posts](#enabling-draft-posts)
 
@@ -20,29 +20,32 @@ I'm writing this post because other setup guides I tried had some issues. Maybe 
 1. Is statically generated and can be maintained without cost on many hosting services
 2. Is simple, yet elegant, right out of the box with little need for development expertise or time spent tweaking styles
 3. Can create content and posts with markdown or through an admin GUI
-4. Automatically generates an RSS feed for the blog
+4. Automatically generates an RSS feed
 5. Requires one-line changes in most cases to add comment support, social networking links, google analytics, and more
 6. Has full PWA (with offline) support - Lighthouse scores green in every category even with many of the "extra" plugins enabled
-If you haven't read part one, I wrote about why I think now is the best time for developers to get started with blogging. All convinced? Let's get started!
 
-# Prerequisites
-1. Git installed on your machine
+If you haven't read part one, I wrote about why I think now is one of the best times for developers to get started with blogging. All convinced? Let's get started!
 
-2. NPM and Gatsby installed on your machine
+# Prerequisite
+
+1. Install Git
+
+2. Install NPM and Gatsby
+
    * `npm install -g gatsby`
-
 3. Import the gatsby-starter-lumen starter template into a local directory
-   * `gatsby new my-gatsby-blog 
-https://github.com/alxshelepenok/gatsby-starter-lumen`
 
+   * `gatsby new my-gatsby-blog 
+     https://github.com/alxshelepenok/gatsby-starter-lumen`
 4. Remove the .git directory from the newly created project, and then start a new git instance
+
    * `cd my-gatsby-blog && git init`
    * Add all the files and push to your own git repository (see an in-depth guide [here](https://kbroman.org/github_tutorial/pages/init.html))
 
-
 Now the project is under your control! Next up - configuration:
 
-# Initial Configuration
+# Gatsby Configuration
+
 Listed here are some of the config files I recommend taking a look at and modifying to your needs:
 
 ```
@@ -67,8 +70,7 @@ Listed here are some of the config files I recommend taking a look at and modify
    package.json
 ```
 
-There are many other plugin settings, but these are the files that developers will need to modify to make the project their own.
-Once you're happy with your changes, we can spin up a server with this command to test it:
+There are many other plugin settings, but these are the files that developers will need to modify to make the project their own. Once you're happy with your changes, we can spin up a server with this command to test it:
 
 `npm run develop`
 
@@ -77,6 +79,7 @@ The webpage can then be viewed at http://localhost:8000. If everything looks goo
 Once you're happy with your new site, push it to the master branch and we'll get started deploying it to the web.
 
 # Configuring Netlify
+
 Login or sign up for a free Netlify account [here](https://www.netlify.com/). Go through the steps to link your GitHub account containing your Gatsby project and deploy it. Once started, the website should be deployed in less than a minute (I know, madness). While that's happening, we need to turn on some settings anyway.
 
 ## Turn on Identity to enable the CMS admin page
