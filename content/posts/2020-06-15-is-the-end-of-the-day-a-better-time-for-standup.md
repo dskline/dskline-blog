@@ -97,7 +97,7 @@ One responsibility of your project manager might be to take information from sta
 
 However, if 5-10 employees are currently carrying their own progress in their brains to the next day, then passing that responsibility onto one project manager might still be a good trade-off. I've worked with some wonderful project managers - they excel at taking notes.
 
-#### And finally, perhaps the biggest reason...
+#### But finally, perhaps the biggest reason...
 
 ## Morning may be the only option
 
