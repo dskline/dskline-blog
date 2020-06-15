@@ -95,7 +95,7 @@ Is this a valid reason though? Would it be too much of an annoyance to reschedul
 
 One responsibility of your project manager might be to take information from standup and pass them onto other teams. If this information is given at the end of the day, the information might not be fresh enough in their brain the following day.
 
-However, if 5-10 employees are currently carrying their own progress in their brains to the next day, then passing that responsibility onto one project manager might still be a good trade-off. I've worked with some wonderful project managers - they know how to take notes.
+However, if 5-10 employees are currently carrying their own progress in their brains to the next day, then passing that responsibility onto one project manager might still be a good trade-off. I've worked with some wonderful project managers - they excel at taking notes.
 
 #### And finally, perhaps the biggest reason...
 
