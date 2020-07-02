@@ -2,7 +2,7 @@
 template: post
 title: Managed Notifications with Expo 38
 slug: expo-38-notifications-example
-draft: true
+draft: false
 date: 2020-06-30T18:32:59.580Z
 description: >-
   Expo version 38 was just released this month, and among the new features was a
