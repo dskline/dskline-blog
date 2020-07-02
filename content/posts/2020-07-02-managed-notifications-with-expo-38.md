@@ -165,7 +165,7 @@ export default function App (): ReactNode {
 
 Adding the feature to the root of the app should now give you a result that looks like this:
 
-
+![Notification Screenshot](/media/screenshot_20200701-213502_expo.jpg "Notification Screenshot")
 
 ## Publish the APK
 
