@@ -20,7 +20,7 @@ tags:
 ---
 [Expo version 38](https://blog.expo.io/expo-sdk-38-is-now-available-ab6cd30ca2ee) was just released this month, and among the new features was a revamp of the Notifications API to support managed workflows. It's now easier than ever to create a simple mobile app that can schedule notifications and perform an action when those notifications are dismissed.
 
-In this post, I'm going to create a mobile app that will remind me to turn off the lights every night at 10:00pm. When I click on it, it will make an API call on my home network to have my lights turned off.
+In this post, I'm going to create a mobile app that will remind me to turn off the lights every night and have it do so when the notification is dismissed.
 
 > How many app notifications does it take to turn off a lightbulb?
 >
@@ -145,7 +145,7 @@ export const useLightsOffNotification = (): void => {
 }
 ```
 
-I have implemented `turnLightsOff()` by having another home device listen for notifications from [Pushbullet](https://www.pushbullet.com/) through a popular automation app called [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US). There are APIs for interacting with a multitude of smart lights, but I found this workflow to be simpler. The main focus of this guide is the expo-notification API.
+I have implemented the `turnLightsOff()` function by having another home device (an Amazon Fire tablet) listen for notifications from [Pushbullet](https://www.pushbullet.com/) through a popular automation app called [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US). There are APIs for interacting with a multitude of smart lights, but I found this workflow to be simpler. The main focus of this guide is the expo-notification API.
 
 ```
 // > App.tsx
@@ -165,10 +165,24 @@ export default function App (): ReactNode {
 
 Adding the feature to the root of the app should now give you a result that looks like this:
 
-![Notification Screenshot](/media/screenshot_20200701-213502_expo.jpg "Notification Screenshot")
+![Notification Screenshot](/media/screenshot_20200701-213502_expo-galaxy-s8.png "Notification Screenshot")
 
-## Publish the APK
+## APK Publishing
 
 You probably don't want to keep the Expo client running on your computer in order to keep your mobile app alive. In order to create a standalone app, you'll want to generate and install an APK from your React Native project.
 
-If you're using an Android device, you can very easily publish your creation as an installable package. First, you'll want to install a JDK ([mac download](https://mac.filehorse.com/download-java-development-kit/)) so that Expo can automatically generate certificates. Then, run `expo build:android`, choose "APK" and "Generate new keystore". This will take some time as a free user, but eventually you'll receive a link to a universal APK file that your device can install.
+If you're using an Android device, this is quite simple. First, you'll want to install a JDK ([mac download](https://mac.filehorse.com/download-java-development-kit/)) so that Expo can automatically generate certificates. Then, run the CLI command: `expo build:android`, choose "APK" and "Generate new keystore". This will take some time as a free user, but eventually you'll receive a link to a universal APK file that your device can install.
+
+## Stay Tuned...
+
+More work is still being done on the refactored expo-notifications API. Personally, I'm excited for notification categories which already has a [pull request](https://github.com/expo/expo/pull/9015) in code review. Notification categories will allow interactive buttons on notification, for example, to ask the user if they would like to cancel, snooze, or complete an action.
+
+## Resources
+
+* [Expo 38 release post](https://blog.expo.io/expo-sdk-38-is-now-available-ab6cd30ca2ee)
+
+* [GitHub: expo-notifications API](https://github.com/expo/expo/tree/master/packages/expo-notifications)
+
+* [Source code](https://github.com/dskline/dskline-home) for this post
+
+* [Dimmy.club](https://dimmy.club/) for providing a mock phone border for mobile screenshots (very cool!)
