@@ -171,11 +171,11 @@ Adding the feature to the root of the app should now give you a result that look
 
 You probably don't want to keep the Expo client running on your computer in order to keep your mobile app alive. In order to create a standalone app, you'll want to generate and install an APK from your React Native project.
 
-If you're using an Android device, this is quite simple. First, you'll want to install a JDK ([mac download](https://mac.filehorse.com/download-java-development-kit/)) so that Expo can automatically generate certificates. Then, run the CLI command: `expo build:android`, choose "APK" and "Generate new keystore". This will take some time as a free user, but eventually you'll receive a link to a universal APK file that your device can install.
+If you're using an Android device, this is quite simple. First, you should download a JDK ([mac download](https://mac.filehorse.com/download-java-development-kit/)) so that Expo can automatically generate certificates. After that's installed, run the CLI command: `expo build:android`, choose "APK" and choose "Generate new keystore". This will take some time as a free user, but eventually you'll receive a link to a universal APK file that your device can install.
 
 ## Stay Tuned...
 
-More work is still being done on the refactored expo-notifications API. Personally, I'm excited for notification categories which already has a [pull request](https://github.com/expo/expo/pull/9015) in code review. Notification categories will allow interactive buttons on notification, for example, to ask the user if they would like to cancel, snooze, or complete an action.
+More work is still being done on the refactored expo-notifications API. Personally, I'm excited for notification categories which already has a [pull request](https://github.com/expo/expo/pull/9015) in code review. Notification categories would allow interactive buttons on notifications, for example, to ask the user if they would like to cancel, snooze, or complete an action.
 
 ## Resources
 
