@@ -52,7 +52,7 @@ A QR code will be generated to allow the Expo app to bundle the test application
 
 ## The code
 
-Follow along with the code at [this repo](https://github.com/dskline/dskline-home).
+Follow along with the code at [this repo](https://github.com/dskline/dskline-home/tree/1.0.0).
 
 Some small modifications were made to the initial create-react-native-app starter project - mainly the addition of absolute path support.
 
