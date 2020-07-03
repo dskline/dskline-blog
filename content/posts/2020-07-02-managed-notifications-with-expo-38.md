@@ -148,7 +148,7 @@ export const useLightsOffNotification = (): void => {
 I have implemented the `turnLightsOff()` function by having another home device (an Amazon Fire tablet) listen for notifications from [Pushbullet](https://www.pushbullet.com/) through a popular automation app called [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US). There are APIs for interacting with a multitude of smart lights, but I found this workflow to be simpler. The main focus of this guide is the expo-notification API.
 
 ```
-// > App.tsx
+// App.tsx
 
 import { useLightsOffNotification } from 'src/features/NotificationLightsOff/useLightsOffNotification'
 
