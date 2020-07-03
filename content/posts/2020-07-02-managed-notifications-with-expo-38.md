@@ -3,7 +3,7 @@ template: post
 title: Managed Notifications with Expo 38
 slug: expo-38-notifications-example
 draft: false
-date: 2020-06-30T18:32:59.580Z
+date: 2020-07-03T01:24:34.987Z
 description: >-
   Expo version 38 was just released this month, and among the new features was a
   revamp of the Notifications API to support managed workflows. It's now easier
